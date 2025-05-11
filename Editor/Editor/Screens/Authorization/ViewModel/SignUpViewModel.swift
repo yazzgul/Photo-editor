@@ -15,9 +15,16 @@ final class SignUpEmailViewModel: ObservableObject {
     @Published var email = ""
     @Published var password = ""
 
+    @Published var showSignUpEmptyErrorSheet = false
+    @Published var showSignUpFirebaseErrorSheet = false
+
+    var showSignUpEmptyErrorText = "No email or password found"
+
+
     func signUp() {
         guard !email.isEmpty, !password.isEmpty else {
-            print("No email or password found")
+            showSignUpEmptyErrorSheet = true
+            print("No email or password found from signUp")
             return
         }
         Task {
@@ -29,7 +36,7 @@ final class SignUpEmailViewModel: ObservableObject {
 
             } catch {
                 print("Error: \(error.localizedDescription)" )
-
+                showSignUpFirebaseErrorSheet = true
             }
         }
     }

@@ -20,9 +20,20 @@ final class SignInViewModel: ObservableObject {
 
     @Published var isPasswordRecoveryViewSheetPresented = false
 
+    @Published var showSignInEmptyErrorSheet = false
+    @Published var showSignInEmptyFirebaseErrorSheet = false
+
+    var showSignInEmptyErrorText = "No email or password found"
+    var showSignInEmptyFirebaseErrorText = ""
+
+    @Published var showSignInWithGoogleErrorSheet = false
+    var showSignInWithGoogleErrorText = ""
+
+
 ///    sign in with Email and Password
     func signIn() {
         guard !email.isEmpty, !password.isEmpty else {
+            showSignInEmptyErrorSheet = true
             print("No email or password found")
             return
         }
@@ -34,6 +45,8 @@ final class SignInViewModel: ObservableObject {
                 isLoggedIn = true
 
             } catch {
+//                showSignInEmptyFirebaseErrorSheet = true
+//                showSignInEmptyFirebaseErrorText = error.localizedDescription
                 print("Error: \(error.localizedDescription)" )
 
             }
@@ -47,20 +60,10 @@ final class SignInViewModel: ObservableObject {
                 try await AuthManager.shared.signInWithGoogle(tokens: tokens)
                 isLoggedIn = true
             } catch {
+                showSignInWithGoogleErrorSheet = true
                 print("Error in signInWithGoogle: \(error.localizedDescription)")
             }
         }
     }
-        //                guard let topVC = Utility.shared.topViewController() else {
-        //                    throw URLError(.badServerResponse)
-        //                }
-        //                let gidSignInResult = try await GIDSignIn.sharedInstance.signIn(withPresenting: topVC)
-        //
-        //                guard let idToken = gidSignInResult.user.idToken?.tokenString else {
-        //                    throw URLError(.badServerResponse)
-        //                }
-        //                let accessToken = gidSignInResult.user.accessToken.tokenString
-        //
-        //                let tokens = GoogleSignInResultModel(idToken: idToken, accessToken: accessToken)
 
 }

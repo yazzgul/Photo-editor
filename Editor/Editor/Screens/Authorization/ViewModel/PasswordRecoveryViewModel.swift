@@ -6,7 +6,7 @@ final class PasswordRecoveryViewModel: ObservableObject {
 
     @Published var email = ""
     @Published var showCheckEmailAlert = false
-    var checkEmailAlertMessage = ""
+    var checkEmailAlertMessage = "Проверьте почту для восстановления пароля"
 
     func recoverPassword() async {
         if email.isEmpty {
@@ -16,7 +16,7 @@ final class PasswordRecoveryViewModel: ObservableObject {
             try await AuthManager.shared.resetPassword(email: email)
             
             print("Success in password recovery")
-            checkEmailAlertMessage = "Проверьте почту для восстановления пароля"
+//            checkEmailAlertMessage = "Проверьте почту для восстановления пароля"
             showCheckEmailAlert = true
 
 

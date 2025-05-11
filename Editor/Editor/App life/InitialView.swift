@@ -1,14 +1,9 @@
-//
-//  InitialView.swift
-//  Editor
-//
-//  Created by Язгуль Хасаншина on 09.05.2025.
-//
-
 import SwiftUI
 
 struct InitialView: View {
     @AppStorage("isLoggedIn") private var isLoggedIn = false
+
+//    @StateObject var vm = ViewModel()
 
     var body: some View {
 
@@ -37,7 +32,10 @@ struct InitialView: View {
             }
             
         }
+//        .environmentObject(vm)
         .onAppear() {
+            UserDefaults.standard.setValue(false, forKey: "_UIConstraintBasedLayoutLogUnsatisfiable")
+
             let authUser = try? AuthManager.shared.getAuthenticatedUser()
             isLoggedIn = authUser != nil ? true : false
         }

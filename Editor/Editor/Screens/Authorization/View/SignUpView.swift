@@ -33,6 +33,16 @@ struct SignUpView: View {
             
             Spacer()
         }
+        .alert("Error", isPresented: $viewModel.showSignUpEmptyErrorSheet) {
+            Button("OK", role: .cancel) { }
+        } message: {
+            Text(viewModel.showSignUpEmptyErrorText)
+        }
+        .alert("Error", isPresented: $viewModel.showSignUpFirebaseErrorSheet) {
+            Button("OK", role: .cancel) { }
+        } message: {
+            Text("Something bad happened")
+        }
         .padding()
         .navigationTitle("Sign Up with Email")
     }

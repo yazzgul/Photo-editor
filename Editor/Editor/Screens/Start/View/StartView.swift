@@ -9,11 +9,11 @@ struct StartView: View {
                 Text("EDITOR")
                     .font(.system(size: 48, weight: .semibold))
                     .tracking(4)
-                    .foregroundStyle(.primary)
+                    .foregroundStyle(.blue)
 
-                Text("Редактор для твоих фото")
+                Text("Your favorite editor ... ")
                     .font(.title3)
-                    .foregroundStyle(.gray)
+                    .foregroundStyle(.blue)
             }
             .multilineTextAlignment(.center)
             .padding()
@@ -21,12 +21,12 @@ struct StartView: View {
             Spacer()
 
             NavigationLink(destination: SignInView()) {
-                Text("Войти")
+                Text("Go in")
                     .font(.headline)
                     .foregroundStyle(.white)
                     .frame(maxWidth: .infinity)
                     .padding()
-                    .background(Color.black)
+                    .background(Color.blue)
                     .cornerRadius(16)
                     .padding(.horizontal, 24)
                     .padding(.bottom, 40)

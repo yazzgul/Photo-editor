@@ -56,6 +56,22 @@ struct SignInView: View {
             }
             .navigationBarBackButtonHidden()
         }
+        .alert("Error", isPresented: $viewModel.showSignInEmptyErrorSheet) {
+            Button("OK", role: .cancel) { }
+        } message: {
+            Text(viewModel.showSignInEmptyErrorText)
+        }
+//        раздельные алерты так как описания ошибки разные будут
+        .alert("Error", isPresented: $viewModel.showSignInWithGoogleErrorSheet) {
+            Button("OK", role: .cancel) { }
+        } message: {
+            Text("Something bad happened")
+        }
+        .alert("Error", isPresented: $viewModel.showSignInEmptyFirebaseErrorSheet) {
+            Button("OK", role: .cancel) { }
+        } message: {
+            Text("Something bad happened")
+        }
         .padding()
         .navigationTitle("Sign In")
     }
