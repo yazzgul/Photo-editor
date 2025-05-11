@@ -9,6 +9,29 @@
 /* Begin PBXBuildFile section */
 		282428832DCF46A40032C938 /* GoogleAuthHelperManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282428822DCF46A40032C938 /* GoogleAuthHelperManager.swift */; };
 		282428852DCF4A4D0032C938 /* AuthProviderOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282428842DCF4A4D0032C938 /* AuthProviderOption.swift */; };
+		282428882DCF593B0032C938 /* FileManager+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282428872DCF593B0032C938 /* FileManager+.swift */; };
+		2824288A2DCF59710032C938 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282428892DCF59710032C938 /* ImagePicker.swift */; };
+		2824288C2DCF5A1E0032C938 /* ZoomableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2824288B2DCF5A1E0032C938 /* ZoomableScrollView.swift */; };
+		2824288E2DCF61790032C938 /* MainScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2824288D2DCF61790032C938 /* MainScreenViewModel.swift */; };
+		282428912DCF62430032C938 /* Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282428902DCF62430032C938 /* Picker.swift */; };
+		288E53DB2DCF77F100EE7328 /* MyImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288E53DA2DCF77F100EE7328 /* MyImage.swift */; };
+		288E53DD2DCF78C300EE7328 /* MyImageError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288E53DC2DCF78C300EE7328 /* MyImageError.swift */; };
+		288E53E02DCF7F5600EE7328 /* MainButtonLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288E53DF2DCF7F5600EE7328 /* MainButtonLabelStyle.swift */; };
+		288E53E62DCF9D3500EE7328 /* MainCanvasDrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288E53E52DCF9D3500EE7328 /* MainCanvasDrawingView.swift */; };
+		288E53E82DCFBE4500EE7328 /* PKCanvasView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288E53E72DCFBE4500EE7328 /* PKCanvasView+.swift */; };
+		288E53EA2DCFBE9A00EE7328 /* ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288E53E92DCFBE9A00EE7328 /* ShareSheet.swift */; };
+		288E53EC2DCFBEBA00EE7328 /* PKCanvasRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288E53EB2DCFBEBA00EE7328 /* PKCanvasRepresentation.swift */; };
+		288E53EE2DCFD6D700EE7328 /* MainPhotoEffectButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288E53ED2DCFD6D600EE7328 /* MainPhotoEffectButtonView.swift */; };
+		288E53F02DD0A1B300EE7328 /* PhotoEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288E53EF2DD0A1B300EE7328 /* PhotoEffect.swift */; };
+		288E53F22DD0A23D00EE7328 /* PickerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288E53F12DD0A23D00EE7328 /* PickerHelper.swift */; };
+		288E53F42DD0A60600EE7328 /* PhotoEffectCoreImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288E53F32DD0A60600EE7328 /* PhotoEffectCoreImageService.swift */; };
+		288E53F82DD0C56000EE7328 /* UserOverlayText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288E53F72DD0C56000EE7328 /* UserOverlayText.swift */; };
+		288E53FE2DD0D47200EE7328 /* MainScreenUserCustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288E53FD2DD0D47200EE7328 /* MainScreenUserCustomTextView.swift */; };
+		288E54002DD0F77400EE7328 /* TextFontType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288E53FF2DD0F77400EE7328 /* TextFontType.swift */; };
+		288E54022DD1084500EE7328 /* TextHelperService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288E54012DD1084500EE7328 /* TextHelperService.swift */; };
+		288E54042DD1386A00EE7328 /* PhotoLibraryHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288E54032DD1386A00EE7328 /* PhotoLibraryHelper.swift */; };
+		288E54062DD13AF100EE7328 /* MainEditorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288E54052DD13AF100EE7328 /* MainEditorError.swift */; };
+		288E54082DD1457600EE7328 /* TextFieldViewModify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288E54072DD1457600EE7328 /* TextFieldViewModify.swift */; };
 		289086782DCDF58300F6DE49 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289086772DCDF58300F6DE49 /* SignUpView.swift */; };
 		2890867A2DCE179000F6DE49 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289086792DCE179000F6DE49 /* AuthManager.swift */; };
 		2890867F2DCE182E00F6DE49 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2890867E2DCE182E00F6DE49 /* SignUpViewModel.swift */; };
@@ -28,7 +51,6 @@
 		28F7BEC02DCBA85300AB0035 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F7BEBF2DCBA85300AB0035 /* ProfileView.swift */; };
 		28F7BEC22DCBA88900AB0035 /* PasswordRecoveryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F7BEC12DCBA88900AB0035 /* PasswordRecoveryView.swift */; };
 		28F7BEC92DCBAEAF00AB0035 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 28F7BEC82DCBAEAF00AB0035 /* GoogleService-Info.plist */; };
-		28F7BECE2DCCA4C900AB0035 /* Application_utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F7BECD2DCCA4C900AB0035 /* Application_utility.swift */; };
 		28F7BF8A2DCD67B200AB0035 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 28F7BF892DCD67B200AB0035 /* FirebaseAuth */; };
 		28F7BF8C2DCD67B200AB0035 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 28F7BF8B2DCD67B200AB0035 /* FirebaseDatabase */; };
 		28F7BF8E2DCD67B200AB0035 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 28F7BF8D2DCD67B200AB0035 /* FirebaseDatabaseSwift */; };
@@ -41,6 +63,29 @@
 /* Begin PBXFileReference section */
 		282428822DCF46A40032C938 /* GoogleAuthHelperManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuthHelperManager.swift; sourceTree = "<group>"; };
 		282428842DCF4A4D0032C938 /* AuthProviderOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthProviderOption.swift; sourceTree = "<group>"; };
+		282428872DCF593B0032C938 /* FileManager+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+.swift"; sourceTree = "<group>"; };
+		282428892DCF59710032C938 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		2824288B2DCF5A1E0032C938 /* ZoomableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomableScrollView.swift; sourceTree = "<group>"; };
+		2824288D2DCF61790032C938 /* MainScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewModel.swift; sourceTree = "<group>"; };
+		282428902DCF62430032C938 /* Picker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picker.swift; sourceTree = "<group>"; };
+		288E53DA2DCF77F100EE7328 /* MyImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyImage.swift; sourceTree = "<group>"; };
+		288E53DC2DCF78C300EE7328 /* MyImageError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyImageError.swift; sourceTree = "<group>"; };
+		288E53DF2DCF7F5600EE7328 /* MainButtonLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButtonLabelStyle.swift; sourceTree = "<group>"; };
+		288E53E52DCF9D3500EE7328 /* MainCanvasDrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCanvasDrawingView.swift; sourceTree = "<group>"; };
+		288E53E72DCFBE4500EE7328 /* PKCanvasView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PKCanvasView+.swift"; sourceTree = "<group>"; };
+		288E53E92DCFBE9A00EE7328 /* ShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheet.swift; sourceTree = "<group>"; };
+		288E53EB2DCFBEBA00EE7328 /* PKCanvasRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKCanvasRepresentation.swift; sourceTree = "<group>"; };
+		288E53ED2DCFD6D600EE7328 /* MainPhotoEffectButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPhotoEffectButtonView.swift; sourceTree = "<group>"; };
+		288E53EF2DD0A1B300EE7328 /* PhotoEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEffect.swift; sourceTree = "<group>"; };
+		288E53F12DD0A23D00EE7328 /* PickerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerHelper.swift; sourceTree = "<group>"; };
+		288E53F32DD0A60600EE7328 /* PhotoEffectCoreImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEffectCoreImageService.swift; sourceTree = "<group>"; };
+		288E53F72DD0C56000EE7328 /* UserOverlayText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserOverlayText.swift; sourceTree = "<group>"; };
+		288E53FD2DD0D47200EE7328 /* MainScreenUserCustomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenUserCustomTextView.swift; sourceTree = "<group>"; };
+		288E53FF2DD0F77400EE7328 /* TextFontType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFontType.swift; sourceTree = "<group>"; };
+		288E54012DD1084500EE7328 /* TextHelperService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextHelperService.swift; sourceTree = "<group>"; };
+		288E54032DD1386A00EE7328 /* PhotoLibraryHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryHelper.swift; sourceTree = "<group>"; };
+		288E54052DD13AF100EE7328 /* MainEditorError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainEditorError.swift; sourceTree = "<group>"; };
+		288E54072DD1457600EE7328 /* TextFieldViewModify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldViewModify.swift; sourceTree = "<group>"; };
 		289086772DCDF58300F6DE49 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		289086792DCE179000F6DE49 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		2890867E2DCE182E00F6DE49 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
@@ -62,7 +107,6 @@
 		28F7BEC12DCBA88900AB0035 /* PasswordRecoveryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRecoveryView.swift; sourceTree = "<group>"; };
 		28F7BEC82DCBAEAF00AB0035 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		28F7BECA2DCBAEDD00AB0035 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		28F7BECD2DCCA4C900AB0035 /* Application_utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application_utility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +127,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		282428862DCF58A10032C938 /* ImageViewRepresentables */ = {
+			isa = PBXGroup;
+			children = (
+				282428892DCF59710032C938 /* ImagePicker.swift */,
+				2824288B2DCF5A1E0032C938 /* ZoomableScrollView.swift */,
+				288E53E92DCFBE9A00EE7328 /* ShareSheet.swift */,
+				288E53EB2DCFBEBA00EE7328 /* PKCanvasRepresentation.swift */,
+			);
+			path = ImageViewRepresentables;
+			sourceTree = "<group>";
+		};
+		288E53DE2DCF7F2A00EE7328 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				288E53DF2DCF7F5600EE7328 /* MainButtonLabelStyle.swift */,
+				288E53ED2DCFD6D600EE7328 /* MainPhotoEffectButtonView.swift */,
+				288E54072DD1457600EE7328 /* TextFieldViewModify.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
 		2890867B2DCE17E000F6DE49 /* Authorization */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +183,13 @@
 				289086832DCE1E9200F6DE49 /* AuthDataResultModel.swift */,
 				2890869B2DCE6CB800F6DE49 /* GoogleSignInResultModel.swift */,
 				282428842DCF4A4D0032C938 /* AuthProviderOption.swift */,
+				282428902DCF62430032C938 /* Picker.swift */,
+				288E53DA2DCF77F100EE7328 /* MyImage.swift */,
+				288E53DC2DCF78C300EE7328 /* MyImageError.swift */,
+				288E53EF2DD0A1B300EE7328 /* PhotoEffect.swift */,
+				288E53F72DD0C56000EE7328 /* UserOverlayText.swift */,
+				288E53FF2DD0F77400EE7328 /* TextFontType.swift */,
+				288E54052DD13AF100EE7328 /* MainEditorError.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -160,6 +232,8 @@
 			isa = PBXGroup;
 			children = (
 				28F7BEBD2DCBA83A00AB0035 /* MainScreenView.swift */,
+				288E53E52DCF9D3500EE7328 /* MainCanvasDrawingView.swift */,
+				288E53FD2DD0D47200EE7328 /* MainScreenUserCustomTextView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -167,6 +241,7 @@
 		289086912DCE458000F6DE49 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				2824288D2DCF61790032C938 /* MainScreenViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -190,6 +265,8 @@
 		289086962DCE653D00F6DE49 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				282428872DCF593B0032C938 /* FileManager+.swift */,
+				288E53E72DCFBE4500EE7328 /* PKCanvasView+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -213,6 +290,8 @@
 		28F7BE722DCB668A00AB0035 /* Editor */ = {
 			isa = PBXGroup;
 			children = (
+				288E53DE2DCF7F2A00EE7328 /* Style */,
+				282428862DCF58A10032C938 /* ImageViewRepresentables */,
 				289086962DCE653D00F6DE49 /* Extensions */,
 				28F7BE812DCB716900AB0035 /* Services */,
 				289086802DCE1D7500F6DE49 /* Models */,
@@ -239,6 +318,10 @@
 			children = (
 				289086792DCE179000F6DE49 /* AuthManager.swift */,
 				282428822DCF46A40032C938 /* GoogleAuthHelperManager.swift */,
+				288E53F12DD0A23D00EE7328 /* PickerHelper.swift */,
+				288E53F32DD0A60600EE7328 /* PhotoEffectCoreImageService.swift */,
+				288E54012DD1084500EE7328 /* TextHelperService.swift */,
+				288E54032DD1386A00EE7328 /* PhotoLibraryHelper.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -247,7 +330,6 @@
 			isa = PBXGroup;
 			children = (
 				28F7BE732DCB668A00AB0035 /* EditorApp.swift */,
-				28F7BECD2DCCA4C900AB0035 /* Application_utility.swift */,
 				289086852DCE331500F6DE49 /* InitialView.swift */,
 				289086992DCE66D600F6DE49 /* Utility.swift */,
 			);
@@ -349,24 +431,46 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28F7BECE2DCCA4C900AB0035 /* Application_utility.swift in Sources */,
+				288E53FE2DD0D47200EE7328 /* MainScreenUserCustomTextView.swift in Sources */,
+				288E53EC2DCFBEBA00EE7328 /* PKCanvasRepresentation.swift in Sources */,
 				289086842DCE1E9200F6DE49 /* AuthDataResultModel.swift in Sources */,
+				288E53EA2DCFBE9A00EE7328 /* ShareSheet.swift in Sources */,
+				288E54042DD1386A00EE7328 /* PhotoLibraryHelper.swift in Sources */,
+				288E53F02DD0A1B300EE7328 /* PhotoEffect.swift in Sources */,
+				288E53DB2DCF77F100EE7328 /* MyImage.swift in Sources */,
+				2824288E2DCF61790032C938 /* MainScreenViewModel.swift in Sources */,
+				288E53F42DD0A60600EE7328 /* PhotoEffectCoreImageService.swift in Sources */,
+				288E53DD2DCF78C300EE7328 /* MyImageError.swift in Sources */,
+				282428912DCF62430032C938 /* Picker.swift in Sources */,
 				28F7BEBE2DCBA83A00AB0035 /* MainScreenView.swift in Sources */,
+				2824288A2DCF59710032C938 /* ImagePicker.swift in Sources */,
+				288E53E82DCFBE4500EE7328 /* PKCanvasView+.swift in Sources */,
+				282428882DCF593B0032C938 /* FileManager+.swift in Sources */,
 				28F7BEC22DCBA88900AB0035 /* PasswordRecoveryView.swift in Sources */,
 				289086862DCE331500F6DE49 /* InitialView.swift in Sources */,
+				288E54082DD1457600EE7328 /* TextFieldViewModify.swift in Sources */,
+				288E53E62DCF9D3500EE7328 /* MainCanvasDrawingView.swift in Sources */,
 				289086952DCE47FB00F6DE49 /* PasswordRecoveryViewModel.swift in Sources */,
 				282428832DCF46A40032C938 /* GoogleAuthHelperManager.swift in Sources */,
+				288E53F82DD0C56000EE7328 /* UserOverlayText.swift in Sources */,
 				28F7BE762DCB668A00AB0035 /* StartView.swift in Sources */,
+				288E54062DD13AF100EE7328 /* MainEditorError.swift in Sources */,
 				28F7BE862DCB755E00AB0035 /* SignInView.swift in Sources */,
+				288E53EE2DCFD6D700EE7328 /* MainPhotoEffectButtonView.swift in Sources */,
 				28F7BE742DCB668A00AB0035 /* EditorApp.swift in Sources */,
 				2890868B2DCE36F300F6DE49 /* ProfileViewModel.swift in Sources */,
 				282428852DCF4A4D0032C938 /* AuthProviderOption.swift in Sources */,
+				288E54022DD1084500EE7328 /* TextHelperService.swift in Sources */,
 				28F7BEC02DCBA85300AB0035 /* ProfileView.swift in Sources */,
 				2890867F2DCE182E00F6DE49 /* SignUpViewModel.swift in Sources */,
 				2890869C2DCE6CB800F6DE49 /* GoogleSignInResultModel.swift in Sources */,
 				2890867A2DCE179000F6DE49 /* AuthManager.swift in Sources */,
+				288E53E02DCF7F5600EE7328 /* MainButtonLabelStyle.swift in Sources */,
+				288E54002DD0F77400EE7328 /* TextFontType.swift in Sources */,
+				2824288C2DCF5A1E0032C938 /* ZoomableScrollView.swift in Sources */,
 				289086782DCDF58300F6DE49 /* SignUpView.swift in Sources */,
 				2890868D2DCE3F5700F6DE49 /* SignInViewModel.swift in Sources */,
+				288E53F22DD0A23D00EE7328 /* PickerHelper.swift in Sources */,
 				2890869A2DCE66D700F6DE49 /* Utility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -507,6 +611,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Editor/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Would like to use the camera to take photos";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Would like to use your library to save the photo";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -537,6 +643,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Editor/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Would like to use the camera to take photos";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Would like to use your library to save the photo";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
